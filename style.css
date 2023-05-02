@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding-block: 2rem;
+  font-family: "Merriweather", serif;
+  background-image: url(./Images/pexels-leeloo-thefirst-5428836.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+  place-items: center;
+}
+
+.accordion {
+  width: min(100% - 1rem, 550px);
+  background-color: rgba(243, 243, 243, 0.95);
+  color: rgb(35, 35, 35);
+  padding: 1.9rem;
+  border-radius: 1rem;
+}
+
+.accordion-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.question {
+  cursor: pointer;
+  padding-block: 1.2rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid black;
+
+  position: relative;
+}
+
+.question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+}
+
+.answer {
+  padding-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.5;
+
+  height: 0px;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+/* Javascript styling link */
+
+.content-container.active .answer {
+  height: 240px;
+}
+
+.content-container.active .question {
+  font-size: 1.2rem;
+  transition: 500ms;
+}
+
+.content-container.active .question::after {
+  content: "-";
+  font-size: 1.5rem;
+  transition: 500ms;
+}
