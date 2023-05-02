@@ -51,6 +51,7 @@ body {
 
 .question::after {
   content: "+";
+  font-size: 1.7rem;
   position: absolute;
   right: 0;
 }
@@ -61,15 +62,19 @@ body {
   font-weight: 300;
   line-height: 1.5;
 
-  height: 0px;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 500ms;
+}
+
+.answer > div {
   overflow: hidden;
-  transition: 500ms;
 }
 
 /* Javascript styling link */
 
 .content-container.active .answer {
-  height: 240px;
+  grid-template-rows: 1fr;
 }
 
 .content-container.active .question {
@@ -79,6 +84,6 @@ body {
 
 .content-container.active .question::after {
   content: "-";
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: 500ms;
 }
