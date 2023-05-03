@@ -65,7 +65,7 @@ body {
 
   display: grid;
   grid-template-rows: 0fr;
-  transition: all 500ms;
+  transition: all 700ms;
 }
 
 .answer > div {
@@ -80,10 +80,10 @@ body {
 
 .content-container.active .question {
   font-size: 1.2rem;
-  transition: 500ms;
+  transition: 700ms;
 }
 
 .content-container.active .question::after {
   transform: rotate(45deg);
-  transition: 500ms;
+  transition: 700ms;
 }
