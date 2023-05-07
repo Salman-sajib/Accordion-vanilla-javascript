@@ -7,7 +7,7 @@
 body {
   min-height: 100vh;
   padding-block: 2rem;
-  font-family: "Merriweather", serif;
+  font-family: "Fira Sans", sans-serif;
   background-image: url(./Images/pexels-leeloo-thefirst-5428836.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -43,6 +43,7 @@ body {
   cursor: pointer;
   padding-block: 1.2rem;
   font-size: 1.3rem;
+  font-weight: 500;
   border-bottom: 1px solid rgb(34, 34, 34);
 
   position: relative;
@@ -59,7 +60,7 @@ body {
 .answer {
   padding-top: 1rem;
   font-size: 0.95rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
 
   display: grid;
